@@ -1,5 +1,7 @@
 # C++/CUDA Accelerator for the NumericBoard Problem
 
+![board](CUDA_NumericBoard/x64/Debug/assests/board.png)
+
 This solution leverages the GPU's massive parallelism by having
 the CPU distribute a wide range of subproblems to the CUDA cores.
 Specifically, it utilizes an RTX 3090 FE with 10496 CUDA cores.
@@ -15,3 +17,5 @@ which become individual subproblems. These subproblems are then
 dispatched to the GPU. Each GPU thread, assigned a subproblem,
 executes an iterative backtracking algorithm. Upon finding a solution,
 the global atomic counter is incremented to ensure thread-safe accumulation.
+
+![rtx3090](CUDA_NumericBoard/x64/Debug/assests/rtx3090.jpg)

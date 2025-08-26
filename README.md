@@ -18,5 +18,5 @@ dispatched to the GPU. Each GPU thread, assigned a subproblem,
 executes an iterative backtracking algorithm. Upon finding a solution,
 the global atomic counter is incremented to ensure thread-safe accumulation.
 
-Reducing the time in sixth test with 14 unknowns numbers from 647,39s to 0,58s and
-finding the same 83 possible asnwers
+Reducing the time in sixth test with 14 unknowns numbers from **647,39s** to **0,58s** and
+finding the same 83 possible answers
